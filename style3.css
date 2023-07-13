@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fullpage{
+    width: 100%;
+    height: auto;
+}
+.layout{    
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.grids{
+    position: absolute;
+    width: 75%;
+    height: 3000px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.line1{
+    border: 1px solid #ccc;
+}
+.line2{
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.navbox{
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+ 
+}
+.nav{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 70px;
+    border: 1px solid #ccc;
+    justify-content: space-between;
+    margin-top: 1.2%;
+  
+    overflow: hidden;
+    position: fixed;
+    background-color: #ccc;
+
+}
+.logo{
+    width: 5%;
+    height: auto;
+}
+.logo img{
+    width: 100%;
+    height: 60px;
+}
+.navitems{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+.navitems a{
+    width: 40%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.menu{
+   
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.nothing{
+    width: 100%;
+    height: 260px;
+}
+.textharu{
+    height: 350px;
+    width: 100%;
+    display: flex;
+   
+    justify-content: center;
+}
+.text1{
+    width: 75%;
+    height: 350px;
+   
+   
+    
+}
+.headline{
+    width: 100%;
+    height: 29%;
+    background: #fff;
+    display: flex;
+    padding: 15px;
+    
+}
+.headline p{
+    font-size: 80px;
+    font-weight: 900;
+    word-spacing: 5px;
+ 
+}
+.heads{
+    margin-left: 2%;
+    overflow: hidden;
+    text-align: center;
+}
+.heads span{
+    display: block;
+    font-size: 80px;
+    font-weight: 900;
+    animation: move 8s infinite;
+}
+@keyframes move{
+    0% {
+        transition: translateY(-100);
+    }
+
+    40% {
+        transform: translateY(-101%);
+    }
+
+    60% {
+        transform: translateY(-202%);
+    }
+
+    100% {
+        transform: translateY(-200%);
+
+    }
+}
+.para{
+    width: 33%;
+
+    height: 80px;
+    line-height: 20px;
+    word-spacing: 2px;
+    color: #898983;
+    padding: 15px;
+   margin-left: 15px;
+    
+}
+.btn{
+    width: 30%;
+    height: 80px;
+    padding: 10px;
+    border: none;
+}
+.btn button{
+    width: 40%;
+    height: 40px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: none;
+    letter-spacing: 4px;
+    margin-left: 15px;
+}
+.photo{
+    overflow: hidden;
+    width: 100%;
+    height: 1080px;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation:  anime 12s ease-in-out infinite;
+}
+
+
+    @keyframes anime {
+        0% {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9NKouH8F2PU3sc9oo_0ZtguAKbAcVeAfBLOb5DFGG&s");
+        }
+    
+        25% {
+            background-image: url("https://w0.peakpx.com/wallpaper/42/267/HD-wallpaper-nature-scenery-scenery-nature.jpg");
+        }
+    
+        50% {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqnvCpS9Ur1lqlw-LkQM00-k7ObCzsbsfDHx9EbdUeZOmDs1DVRLcXbzm2beiNyWm8KdE&usqp=CAU");
+        }
+    
+        75% {
+            background-image: url("https://thumbs.dreamstime.com/b/picturesque-autumn-scenery-santa-maddalena-village-church-road-colorful-trees-meadows-foreground-mountain-peaks-159426189.jpg");
+        }
+    
+        100% {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVG-TEvH4EUkHIrZxiZKDgHTtXzEHn7wixXXJ1dNI&s");
+        }
+    
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+.arrowpic,
+.arrowpic1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+
+}
+.leftside{
+    width: 37.5%;
+    height: 90px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.leftside img{
+    width: 20px;
+    height: 20px;
+}
+.leftside span{
+    letter-spacing: 3px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.arrowpic1{
+    width: 62%;
+    margin-top: 47%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.leftside1{
+    width: 80%;
+    height: 90px;
+    background: #fff;
+}
+.bio{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.biotext{
+    width: 80%;
+    height: 80%;
+    margin-top: 4%;
+
+}
+.nine{
+    width: 56%;
+    height: 8%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nine p{
+    font-size: 50px;
+    width: 20%;
+    text-align: center;
+    margin-left: 40px;
+
+}
+.nine span{
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.biotext2{
+    width: 100%;
+    height: 90%;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.biotext3{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.living{
+    font-size: 50px;
+    margin-left: 2%;
+}
+.paragraph{
+    font-size: 20px;
+    margin-left: 8px;
+}
+.pp{
+    width: 100%;
+    height: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pp2{
+    width: 6%;
+    height: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px 100px 100px 100px;
+
+
+}
+.pp2 img{
+    border-radius: 80px;
+    height: 80%;
+    width: 80%;
+   
+
+}
+.name{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1%;
+}
+.name p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.name span{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.photo2{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.photo3{
+    height: 100%;
+    width: 75%;
+    background-image: url("https://media.istockphoto.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?s=612x612&w=0&k=20&c=kt8-RRzCDunpxgKFMBBjZ6jSteetNhhSxHZFvHQ0hNU=");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.space{
+    width: 100%;
+    height: 90px;
+}
+.space2{
+    width: 66.7%;
+    height: 100%;
+    background: #fff
+}
+.imgtext{
+    height: 610px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgtext1{
+    height: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.why{
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.take{
+    font-size: 60px;
+    font-weight: bold;
+    word-spacing: 5px;
+    color: #fff;
+    text-align: center;
+}
+.box{
+    height: 700px;
+    width: 100%;
+    border-radius: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+}
